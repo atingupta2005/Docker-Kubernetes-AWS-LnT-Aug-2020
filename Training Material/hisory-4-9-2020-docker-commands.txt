@@ -1,0 +1,187 @@
+    1  clear
+    2  apt update
+    3  sudo apt update
+    4  sudo rm -rf /usr/local/bin/docker-compose
+    5  sudo apt-get remove -y docker docker-ce-cli docker-ce docker-engine docker.io containerd runc
+    6  curl -fsSl get.docker.com -o get-dicker.sh
+    7  ls
+    8  mv get-dicker.sh get-docker.sh
+    9  sh get-docker.sh 
+   10  curl -fsSL get.docker.com -o get-docker.sh
+   11  ls
+   12  sh get-docker.sh 
+   13  docker version
+   14  sudo docker version
+   15  sudo usermod -aG docker $USER
+   16  docker version
+   17  logout
+   18  docker version
+   19  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   20  sudo chmod +x /usr/local/bin/docker-compose
+   21  docker-compose version
+   22  clear
+   23  docker version
+   24  docker info
+   25  clear
+   26  docker container run --publish 80:80 nginx
+   27  clear
+   28  docker container run --publish 80:80 --detach nginx
+   29  docker container run --publish 81:80 --detach nginx
+   30  docker container ls
+   31  docker container ls -a
+   32  docker container stop 0b5c3951d100
+   33  docker container ls -a
+   34  docker container ls
+   35  docker container stop 9ac
+   36  docker container ls -a
+   37  docker container stop nostalgic_torvalds
+   38  docker container start nostalgic_torvalds
+   39  docker container ls 
+   40  curl localhost:81
+   41  docker container run --publish 82:80 --detach --name web1 nginx
+   42  docker ls
+   43  docker container ls
+   44  docker container logs web1
+   45  docker container top web1
+   46  top
+   47  docker container top web1
+   48  docker container logs web1
+   49  docker container top web1
+   50  docker contailer ls -a
+   51  docker container ls -a
+   52  docker 9acc 7a87
+   53  docker container rm 9acc 7a87
+   54  docker container ls -a
+   55  docker container ls -a
+   56  docker container rm -f 0b5c
+   57  docker run --name mongo1 -d mongo
+   58  docker container ls
+   59  docker top mongo1
+   60  ps 
+   61  ps -aux
+   62  clear
+   63  docker top mongo1
+   64  ps -aux | grep mongod
+   65  docker ps
+   66  ps
+   67  ls
+   68  ps 
+   69  ps -aux
+   70  docker container inspect mongo1
+   71  ping "172.17.0.2"
+   72  clear
+   73  docker container stats
+   74  docker container ls
+   75  docker run -it --name proxy nginx bash
+   76  docker container start -ai proxy
+   77  docker container ls
+   78  docker container start proxy
+   79  docker container ls
+   80  docker container exec -it proxy bash
+   81  docker container start proxy
+   82  docker container ls
+   83  docker container exec -it proxy bash
+   84  docker image
+   85  docker image ls
+   86  docker pull alpine 
+   87  docker images
+   88  docker pull ubuntu
+   89  docker pull fedora
+   90  docker image rm ubuntu
+   91  docker image rm nginx
+   92  docker pull fedora
+   93  docker pull ubuntu
+   94  docker image rm fedora
+   95  docker image ls
+   96  docker image rm nginx
+   97  docker pull httpd
+   98  docker network ls
+   99  docker container inspect web1
+  100  docker netwoek create my_web_nw
+  101  docker network create my_web_nw
+  102  docker network ls
+  103  docker network inspect my_web_nw 
+  104  clear
+  105  docker network inspect my_web_nw 
+  106  docker network inspecbridge
+  107  docker network inspect bridge
+  108  docker network inspect my_web_nw 
+  109  docker network ls
+  110  docker container run -d --name new_nginx --network my_web_nw nginx
+  111  docker container run -d --name new_nginx2 --network my_web_nw nginx
+  112  docker container run -d --name new_nginx3 --network my_web_nw nginx
+  113  docker network inspect my_web_nw 
+  114  docker container inspect new_nginx
+  115  docker ps
+  116  docker container run -d --name new_nginx4
+  117  docker container run -d --name new_nginx4 nginx
+  118  docker container inspect new_nginx4
+  119  docker ps
+  120  docker container inspect new_nginx4
+  121  history
+  122  docker ps
+  123  docker container exec -it new_nginx2
+  124  docker container exec -it new_nginx2 bash
+  125  docker ps
+  126  docker container exec -it new_nginx bash
+  127  history
+  128  history > hist.txt
+  129  history 
+  130  history > hist1.txt
+  131  ping google,com
+  132  ping google.com
+  133  docker network inspect my_web_nw 
+  134  ping 172.8.0.3
+  135  ping 172.8.0.2
+  136  docker ps
+  137  ping 172.18.0.2
+  138  ping 172.17.0.2
+  139  docker ps
+  140  docker container exec -it  new_nginx3 bash
+  141  docker ps
+  142  docker container exec -it  new_nginx3 bash
+  143  docker ps
+  144  docker container exec -it  new_nginx3 bash
+  145  docker ps
+  146  docker network inspect my_web_nw 
+  147  q
+  148  docker network inspect bridge 
+  149  docker network inspect my_web_nw 
+  150  docker network inspect bridge 
+  151  docker network connect my_web_nw new_nginx4
+  152  docker network inspect bridge 
+  153  docker network inspect my_web_nw 
+  154  docker network inspect bridge 
+  155  docker container inspect new_nginx4
+  156  docker network disconnect my_web_nw new_nginx4
+  157  docker network inspect bridge 
+  158  docker network inspect my_web_nw 
+  159  docker container inspect new_nginx4
+  160  docker network connect my_web_nw new_nginx4
+  161  docker container inspect new_nginx4
+  162  docker network inspect my_web_nw 
+  163  docker network inspect bridge 
+  164  docker container exec -it new_nginx3 bash
+  165  docker container exec -it web1  bash
+  166  docker container inspect new_nginx4
+  167  docker network inspect my_web_nw 
+  168  docker container exec -it new_nginx4 bash
+  169  docker images
+  170  docker pull fedora
+  171  docker pull nginx
+  172  docker pull nginx:1.11
+  173  docker image ls
+  174  docker history nginx:latest
+  175  docker tag nginx atingupta2005/atin_ngix
+  176  docker images
+  177  docker login
+  178  docker image push atingupta2005/atin_ngix 
+  179  docker pull atingupta2005/nginx
+  180  docker image tag nginx atingupta2005/atinnginx
+  181  docker image ls
+  182  docker login
+  183  docker logout
+  184  docker login
+  185  docker push atingupta2005/atinnginx
+  186  history 
+  187  history > his3.txt

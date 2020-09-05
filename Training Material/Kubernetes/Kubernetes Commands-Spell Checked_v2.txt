@@ -17,7 +17,7 @@ sudo az aks get-credentials --resource-group LnTKubernetes --name atingupta2005-
 sudo kubectl config use-context atingupta2005-cluster
 source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
 echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
-sudo kubectl create namespace $USER
+sudo kubectl create namespace "ns-atingupta2005"
 sudo kubectl get namespaces
 sudo kubectl config set-context --current --namespace=$USER
 sudo kubectl get nodes

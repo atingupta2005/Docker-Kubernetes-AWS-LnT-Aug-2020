@@ -19,7 +19,7 @@ source <(kubectl completion bash) # setup autocomplete in bash into the current 
 echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
 sudo kubectl create namespace "ns-atingupta2005"
 sudo kubectl get namespaces
-sudo kubectl config set-context --current --namespace=$USER
+sudo kubectl config set-context --current --namespace="ns-atingupta2005"
 sudo kubectl get nodes
 
 

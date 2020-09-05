@@ -1,0 +1,49 @@
+    1  sudo apt update
+    2  sudo rm -rf /usr/local/bin/docker-compose
+    3  sudo apt-get remove -y docker docker-ce-cli docker-ce docker-engine docker.io containerd runc
+    4  curl -fsSL get.docker.com -o get-docker.sh
+    5  sh get-docker.sh
+    6  sudo usermod -aG docker $USER
+    7  cd my_new_project/
+    8  ll
+    9  ssh azureuser@57.177.134.122
+   10  ssh azureuser@52.177.134.122
+   11  clear
+   12  docker image build -t atingupta2005/my_nginx_project .
+   13  ls
+   14  vim index.html
+   15  docker image build -t atingupta2005/my_nginx_project .
+   16  docker image ls
+   17  clear
+   18  docker container run -p 80:80 --name customnginx_host -d atingupta2005/my_nginx_project
+   19  curl localhost
+   20  docker container run -p 80:80 --name customnginx_host -d atingupta2005/my_nginx_project
+   21  docker stats
+   22  docker volume ls
+   23  docker volume create my_data
+   24  docker volume ls
+   25  find / -name my_data
+   26  sudo find / -name my_data
+   27  ls /var/lib/docker/volumes/
+   28  sudo ls /var/lib/docker/volumes/
+   29  docker images
+   30  docker container run 81:80 --name my_vol_cont1 -d -v my_vol_1:/usr/share/nginx/html/  atingupta2005/my_nginx_project
+   31  sudo docker container run 81:80 --name my_vol_cont1 -d -v my_vol_1:/usr/share/nginx/html/  atingupta2005/my_nginx_project
+   32  sudo docker container run 81:80 --name my_vol_cont1 -d -v my_vol_1:/usr/share/nginx/html  atingupta2005/my_nginx_project
+   33  sudo docker container run -p 81:80 --name my_vol_cont1 -d -v my_vol_1:/usr/share/nginx/html  atingupta2005/my_nginx_project
+   34  docker ps
+   35  cult localhost:81
+   36  curl localhost:81
+   37  sudo find / -name my_vol_1
+   38  sudo cd /var/lib/docker/volumes/my_vol_1
+   39  sudo su
+   40  sudo docker container run -p 81:80 --name my_vol_cont2 -d -v my_vol_1:/usr/share/nginx/html  atingupta2005/my_nginx_project
+   41  curl localhost:81
+   42  sudo docker container run -p 82:80 --name my_vol_cont3 -d -v my_vol_1:/usr/share/nginx/html  atingupta2005/my_nginx_project
+   43  curl localhost:82
+   44  clear
+   45  sudo su
+   46  docker volume inspect my_vol_1 
+   47  docker container inspect my_vol_cont2
+   48  cd ..
+   49  history > day2_docker_hist.txt

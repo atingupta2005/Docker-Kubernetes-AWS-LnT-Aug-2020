@@ -1,0 +1,12 @@
+
+ # - export  clusterName="atingupta2005-cluster-2"
+ # - export your_ns_name="ns-atingupta"
+
+sudo kubectl delete deployment --all
+sudo az aks get-credentials --resource-group LnTKubernetes --name $clusterName
+sudo kubectl config use-context $clusterName
+sudo kubectl create namespace $your_ns_name
+sudo kubectl get namespaces
+sudo kubectl config set-context --current --namespace=$your_ns_name
+sudo kubectl get nodes
+

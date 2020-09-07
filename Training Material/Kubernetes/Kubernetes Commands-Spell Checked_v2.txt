@@ -8,18 +8,20 @@ sudo apt-get install -y kubectl
 #Install Azure CLI
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
+# Setup autocomplete in bash into the current shell, bash-completion package should be installed first.
+source <(kubectl completion bash) 
+echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
+
 # Run below commands to connect to Azure Kubernetes Cluster
 # Use these commands if Azure Cluster and your namespace is already created
 az login
 az account set --subscription "0aebf870-9dad-42d6-b841-71391fa04322"
 sudo az aks get-credentials --resource-group LnTKubernetes --name atingupta2005-cluster
-# To install Kubectl refer: https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-windows
+
 sudo kubectl config use-context atingupta2005-cluster
-source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
-echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
-sudo kubectl create namespace "ns-atingupta2005"
+sudo kubectl create namespace "ns-atingupta2005"  # Note: Specify your namespace here.
 sudo kubectl get namespaces
-sudo kubectl config set-context --current --namespace="ns-atingupta2005"
+sudo kubectl config set-context --current --namespace="ns-atingupta2005"  # Note: Specify your namespace here.
 sudo kubectl get nodes
 
 

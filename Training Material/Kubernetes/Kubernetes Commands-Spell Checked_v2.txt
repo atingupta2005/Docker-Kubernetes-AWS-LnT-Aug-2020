@@ -476,16 +476,20 @@ cd templates
 #Variables are used in this template
 microservice-deployment.yaml
 
+# Delete previous deployments and services
+kubectl get deployment
+kubectl delete deployment currency-conversion
+kubectl delete deployment currency-exchange
+kubectl delete deployment hello-world-rest-api
+
+kubectl get service
+kubectl delete service currency-conversion
+kubectl delete service currency-exchange
+kubectl delete service hello-world-rest-api
+
 #Install Helm Chart
+helm del --purge currency-services
 helm install ./currency-exchange/ --name=currency-services
-
-
-#Install Helm Chart
-helm install ./currency-conversion/ --name=currency-services-1
-
-
-#Before Install Helm Chart, do a dry run
-helm install ./currency-conversion/ --name=currency-services-3 --debug --dry-run
 
 #Get the IP Address:
 kubectl get all
@@ -497,21 +501,21 @@ curl <IP>:8000/currency-exchange/from/EUR/to/INR
 curl <IP>:8100/currency-exchange/from/EUR/to/INR/quantity/10
 
 #To see a history of Helm Chart Deployment
-helm history currency-services-1
+helm history currency-services
 
 #Do some changes in yaml file
 vim values.yaml
 
 #Upgrade the help chart to reflect the changes
-helm upgrade currency-services-1 ./currency-conversion/
+helm upgrade currency-services ./currency-conversion/
 
 #We can also rollback
-helm history currency-services-1
-helm rollback currency-services-1 1
+helm history currency-services
+helm rollback currency-services 1
 
-helm history currency-services-1
+helm history currency-services
 
-kubectl delete all -l app=currency-exchange
+kubectl delete all -l app=currency-conversion
 
 helm repo list
 

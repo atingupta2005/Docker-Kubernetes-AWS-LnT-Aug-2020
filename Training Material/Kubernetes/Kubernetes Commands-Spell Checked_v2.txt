@@ -443,13 +443,6 @@ watch -n 0.1 kubectl get pods  # PODS will be created/deleted automatically base
 #Let' see the events.
 kubectl get events
 
-#Use yaml style for the same
-kubectl get hpa
-kubectl get hpa -o yaml
-kubectl get hpa currency-exchange -o yaml > 01-hpa.yaml
-
-vim hpa.yaml
-
 #Review the content and delete metadata
 
 #Helm Charts--------------------------------------------------------

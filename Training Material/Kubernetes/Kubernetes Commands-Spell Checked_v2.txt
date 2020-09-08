@@ -431,7 +431,8 @@ kubectl apply -f deploment_currency_exchange_autoscale.yaml
 kubectl get pods
 kubectl logs <podID> -f
 kubectl top pods
-watch -n 0.1 curl http://<service_ip>:8000/currency-conversion/from/EUR/to/INR/quantity/10
+watch -n 0.1 curl http://<service_ip>:8000/currency-exchange/from/EUR/to/INR
+#watch -n 0.1 curl http://<service_ip>:8000/currency-conversion/from/EUR/to/INR/quantity/10
 watch -n 0.1 kubectl top pods
 
 #Let's autoscale deployment based on CPU usage

@@ -10,3 +10,14 @@ sudo kubectl get namespaces
 sudo kubectl config set-context --current --namespace=$your_ns_name
 sudo kubectl get nodes
 
+
+-------------------------------------------------------------------------
+
+ # - export  clusterName="atingupta2005-cluster-2"
+ # - export your_ns_name="ns-atingupta"
+
+sudo az aks get-credentials --resource-group LnTKubernetes --name $clusterName
+sudo kubectl config use-context $clusterName
+sudo kubectl get namespaces
+sudo kubectl config set-context --current --namespace=$your_ns_name
+sudo kubectl get nodes

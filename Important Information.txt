@@ -12,6 +12,9 @@ GIT HUB Training Material:
  - Docker, Kubernetes, AWS
 https://github.com/atingupta2005/Docker-Kubernetes-AWS-LnT-Aug-2020/tree/master/Training%20Material
 
+All Assignments:
+https://github.com/atingupta2005/Docker-Kubernetes-AWS-LnT-Aug-2020/blob/master/Assignments/All%20Assignments.txt
+
 Assignments Template
 https://github.com/atingupta2005/Docker-Kubernetes-AWS-LnT-Aug-2020/tree/master/Assignments
 

@@ -1,0 +1,14 @@
+Points for Today:
+1. Must complete assignment related to Docker/Kubernetes today. Need to submit on last day.
+2. Follow guidelines to submit the assignments
+3. Put assignment details before solution.
+4. Docker / Kubernetes machines will not be available from tomorrow onwards.
+5. 
+
+
+
+Imp URLs:
+GIT HUB Training Material:
+https://github.com/atingupta2005/Docker-Kubernetes-AWS-LnT-Aug-2020/tree/master/Training%20Material
+
+

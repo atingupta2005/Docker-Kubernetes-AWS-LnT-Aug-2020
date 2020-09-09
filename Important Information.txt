@@ -9,6 +9,17 @@ Points for Today:
 
 Imp URLs:
 GIT HUB Training Material:
+ - Docker, Kubernetes, AWS
 https://github.com/atingupta2005/Docker-Kubernetes-AWS-LnT-Aug-2020/tree/master/Training%20Material
 
+Assignments Template
+https://github.com/atingupta2005/Docker-Kubernetes-AWS-LnT-Aug-2020/tree/master/Assignments
 
+Google Group:
+https://groups.google.com/g/docker-kubernetes-aws-lnt-aug-2020
+docker-kubernetes-aws-lnt-aug-2020@googlegroups.com
+
+AWS:
+ - Setup CLI Credentials:
+	- https://github.com/atingupta2005/Docker-Kubernetes-AWS-LnT-Aug-2020/blob/master/Training%20Material/AWS/code/setup-cli-credentials.txt
+ - 

@@ -1,0 +1,42 @@
+# 1: Assignment: Manage Multiple Containers
+• Create 2 containers
+	• httpd
+		• Should receive traffic on port 8080 and redirect to the container on port 80
+	• nginx
+		• Should receive traffic on port 80 and redirect to the container on port 80
+• Test if the containers are working using curl command.
+
+
+# 2: Assignment: Build Your Own Dockerfile and Run Containers From It
+• Upload the docker file in assignment folder.
+• Make sure to change dockerfile with your name in format
+• Dockerfile<YourName>
+
+
+# 3: Assignment: Build Dockr-Compose File to:
+	- Spin up 2 ubuntu containers
+	- Also create a volume which will be used to share data in both the containers
+	- Login to one container and create a text file inside the volume.
+	- Login to another container to verify if the text file is availabe in the volume of another container or not
+
+# 4: Assignment: Create a Kubernetes menifest to:
+	- Deploy a POD which shows - "Hello" on port no 8080 at the web page.
+	- Deploy another POD which shows "How are you?" on port 8081 at the web page.
+	- Expose both the Pods using single Service Load balancer in such a way that the output from each POD should be shown alternatively on the web page.
+	
+	
+# 5: Assignment: Install Apache Server on Ubuntu on EC2 instance and expose at Port no 8080
+
+
+
+# 6: Assignment: Implement AWS CloudWatch Logs
+
+
+
+# 7: Assignment: Creating and configuring Elastic Load Balancer to load balance the EC2 instances with sample webapp
+
+
+# 8: Assignment: Creating and configuring Auto Scaling Groups to scale EC2 instances based on configured rules
+
+
+

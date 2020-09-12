@@ -40,3 +40,10 @@
 
 
 
+# 9: Assignment: Create a Docker Image from AWS example and store it in AWS ECR. Also create a Docker container using AWS ECS to deploy the Docker Image we created and stored in AWS ECR. Browse to the published container to verify that it's setup properly.
+
+
+# 10: Create a sample Beanstalk project for dev and prod environment. Create a CodePipeline to implement CI/CD to deliver the changes to Dev environment and also to deliver the changes to Prod environment after manual approval in CodePipeline.
+
+# 11: 
+

@@ -45,5 +45,14 @@
 
 # 10: Create a sample Beanstalk project for dev and prod environment. Create a CodePipeline to implement CI/CD to deliver the changes to Dev environment and also to deliver the changes to Prod environment after manual approval in CodePipeline.
 
-# 11: 
+# Final Project: Need to submit by 23-Sep-2020
+Deploy Web Application on AWS using CI/CD:
+
+1. Take any small web application developed in any technology. Web application should have features of Create, Delete, Update features.
+2. Put the application on GitHub with Dockerfile.
+3. Clone GIT Repository and package the application in Docker image and upload on Docker Hub account.
+4. Create a CI/CD pipeline using AWS Devops tools and deploy it on AWS on any of the platforms like - Elastic Beanstalk or EC2 instances.
+5. Also add a manual approval step to approve the changes at testing environment and upon approval, it should be released on Production environment you have created in AWS.
+6. All the process starting from Docker Image to Deployment should be automated.
+
 
